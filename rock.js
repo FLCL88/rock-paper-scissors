@@ -1,5 +1,4 @@
-console.log('hi');
-
+// This is only for playing in the console :3
 const options = ["rock", "paper", "scissors"];
 
 function getComputerChoice(){
@@ -21,9 +20,6 @@ function checkWinner(playerSelection, computerSelection){
     else {
         return "Computer";
     }
-    
-
-    
 }
 
 function playRound(playerSelection, computerSelection){
@@ -39,4 +35,12 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-getComputerChoice();
+function game(){
+    for (let i = 0; i < 5; i++) {
+        const playerSelection = "rock";
+        const computerSelection = getComputerChoice();
+        playRound(playerSelection, computerSelection);
+    }
+}
+
+game()
